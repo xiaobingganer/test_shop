@@ -1,52 +1,53 @@
 <template>
-    <footer class="footer_guide">
-        <span href="javascript:;" class="guide_item" :class="{ on: '/msite' === $route.path }" @click="goTo('/msite')">
-            <span class="item_icon">
-                <i class="iconfont icon-waimai"></i>
-            </span>
-            <span>外卖</span>
-        </span>
-        <a href="javascript:;" class="guide_item" :class="{ on: '/search' === $route.path }" @click="goTo('/search')">
-            <span class="item_icon">
-                <i class="iconfont icon-search"></i>
-            </span>
-            <span>搜索</span>
-        </a>
-        <a href="javascript:;" class="guide_item" :class="{ on: '/order' === $route.path }" @click="goTo('/order')">
-            <span class="item_icon">
-                <i class="iconfont icon-dingdan"></i>
-            </span>
-            <span>订单</span>
-        </a>
-        <a href="javascript:;" class="guide_item" :class="{ on: '/profile' === $route.path }" @click="goTo('/profile')">
-            <span class="item_icon">
-                <i class="iconfont icon-geren"></i>
-            </span>
-            <span>我的</span>
-        </a>
-    </footer>
+  <!-- 加个注释 -->
+  <footer class="footer_guide">
+    <span href="javascript:;" class="guide_item" :class="{ on: '/msite' === $route.path }" @click="goTo('/msite')">
+      <span class="item_icon">
+        <i class="iconfont icon-waimai"></i>
+      </span>
+      <span>外卖</span>
+    </span>
+    <a href="javascript:;" class="guide_item" :class="{ on: '/search' === $route.path }" @click="goTo('/search')">
+      <span class="item_icon">
+        <i class="iconfont icon-search"></i>
+      </span>
+      <span>搜索</span>
+    </a>
+    <a href="javascript:;" class="guide_item" :class="{ on: '/order' === $route.path }" @click="goTo('/order')">
+      <span class="item_icon">
+        <i class="iconfont icon-dingdan"></i>
+      </span>
+      <span>订单</span>
+    </a>
+    <a href="javascript:;" class="guide_item" :class="{ on: '/profile' === $route.path }" @click="goTo('/profile')">
+      <span class="item_icon">
+        <i class="iconfont icon-geren"></i>
+      </span>
+      <span>我的</span>
+    </a>
+  </footer>
 </template>
 
 <script>
 export default {
-    name: 'FooterGuide',
-    components: {},
-    props: {},
-    data() {
-        return {
-        };
-    },
-    watch: {},
-    computed: {},
-    methods: {
-        //点击底部按钮进行页面跳转
-        goTo(path) {
-            this.$router.replace(path)
-        }
-    },
-    created() { },
-    mounted() { },
-    beforeDestroy() { }
+  name: 'FooterGuide',
+  components: {},
+  props: {},
+  data() {
+    return {
+    };
+  },
+  watch: {},
+  computed: {},
+  methods: {
+    //点击底部按钮进行页面跳转
+    goTo(path) {
+      this.$router.replace(path)
+    }
+  },
+  created() { },
+  mounted() { },
+  beforeDestroy() { }
 };
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
